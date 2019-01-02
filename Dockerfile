@@ -14,4 +14,5 @@ RUN curl https://getcomposer.org/composer.phar > /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
 RUN composer config -g repo.packagist composer https://packagist.laravel-china.org
 RUN cp /root/.composer /.composer -r
+RUN mkdir -p /.composer/cache/repo/https---packagist.laravel-china.org/
 RUN chmod +rwx /.composer -R
